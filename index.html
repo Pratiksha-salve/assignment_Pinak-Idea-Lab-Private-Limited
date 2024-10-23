@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinak Idea Lab Private Limited</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                backgroundImage: {
+                    'diagonal-split': 'linear-gradient(150deg, rgb(49 46 129) 50%, rgb(226 232 240) 50%)',
+                },
+            }
+          }
+        }
+      </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+              .icons{
+                font-size: 60px;
+                position: absolute; /* absolute */
+                top: 0; /* top-0 */
+                left: 50%; /* left-1/2 */
+                transform: translate(-50%, -50%); /* transform -translate-x-1/2 -translate-y-1/2 */
+                background-color: #ffffff; /* bg-white */
+                border-radius: 9999px; /* rounded-full */
+                border: 3px solid #312e81; /* border-2 border-blue-500 */
+              }
+
+              .boxes{
+                position: relative; /* relative */
+                margin: 1rem; /* m-4 (16px = 1rem) */
+                padding: 1rem; /* p-4 */
+                padding-top: 70px;
+                height: 75%; /* h-3/4 */
+                display: flex; /* flex */
+                flex-direction: column; /* flex-col */
+                align-items: center; /* items-center */
+                text-align: center; /* text-center */
+                background-color: white;
+                box-shadow: 0 20px 25px -5px #485666c7, 0 8px 10px -6px #485666c7;
+              }
+            }
+          </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js" defer></script>
+
+    
+</head>
+
+<body class="box-border">
+    <div id="assignment" class="box-border m-4 p-4 h-screen bg-diagonal-split h-screen">
+        <h1 class="text-6xl font-bold text-white font-mono px-8 mx-6 mt-4">OUR SERVICES</h1>
+        <div class="p-6 m-4 flex flex-row justify-evenly items-center h-5/6">
+            
+            <div id='box1' class="boxes hover:z-30">
+                <!-- Your icon here -->
+                <i id='icon1' class="fas fa-exclamation-triangle icons p-4 text-red-700"></i>
+
+                <h2 class="text-xl font-bold mb-4">Emergency plumbing Services</h2>
+                <p class="text-base mb-4">Our plumbers are ready to go 24/7 for emergencies including nights, weekends and holidays.</p>
+                <a href="#" class="hover:text-sky-500 font-semibold">EXPLORE THIS SERVICE ></a>
+            </div>
+      
+            <div id="box2" class="boxes hover:z-30">
+                  <!-- Your icon here -->
+                  <i class="fas fa-wrench icons p-4 text-slate-600"></i>
+
+                  <h2 class="text-xl font-bold mb-4">Plumbing and Drains</h2>
+                  <p class="text-base mb-4">As the largest plumbing and drain service company, we make thousands of repairs every day</p>
+                  <a href="#" class="hover:text-sky-500 font-semibold">EXPLORE THIS SERVICE ></a>
+            </div>
+          
+            <div id="box3" class="boxes hover:z-30">
+                  <!-- Your icon here -->
+                  <i class="fas fa-tint icons px-6 py-4 text-sky-500"></i>
+                  <h2 class="text-xl font-bold mb-4">Water Damage</h2>
+                  <p class="text-base mb-4">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                  <a href="#" class="hover:text-sky-500 font-semibold">EXPLORE THIS SERVICE ></a>
+            </div>
+
+            <div id="box4" class="boxes hover:z-30">
+                <!-- Your icon here -->
+                <i class="fas fa-fire icons px-6 py-4 text-orange-500"></i>
+                <h2 class="text-xl font-bold mb-4">Water Heaters</h2>
+                <p class="text-base mb-4">Trust Roto-Rooter for repair and replacement of gas, electric and tankless water heaters</p>
+                <a href="#" class="hover:text-sky-500 font-semibold">EXPLORE THIS SERVICE ></a>
+            </div>
+        </div>
+    </div>
+      
+    
+</body>
+</html>
